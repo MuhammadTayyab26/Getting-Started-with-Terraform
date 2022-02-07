@@ -29,9 +29,9 @@ resource "azurerm_app_service" "example" {
     "SOME_KEY" = "some-value"
   }
 
-  connection_string {
-    name  = "Database"
-    type  = "SQLServer"
-    value = "Server=some-server.mydomain.com;Integrated Security=SSPI"
-  }
+ # connection_string {
+ #  name  = "Database"
+ #   type  = "SQLServer"
+ #  value = "Server=some-server.mydomain.com;Integrated Security=SSPI"
+ # }
 }
